@@ -23,4 +23,4 @@ jobs:
       run: pip install pandas requests datetime
 
     - name: Run ETL script
-      run: python etl_script.py
+      run: python app.py
