@@ -24,15 +24,5 @@ jobs:
     - name: Run ETL script
       run: python app.py
 
-    - name: Configure Git user
-      run: |
-        git config --global user.name 'hksahil'
-        git config --global user.email 'officialhksahil@gmail.com'
-
-    - name: Commit and push changes
-      run: |
-        git add etl_log.txt
-        git commit -m 'Update ETL log file'
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Save to Github
+      run: mikeal/publish-to-github-action@master
