@@ -25,6 +25,6 @@ jobs:
       run: python app.py
 
     - name: Configure push
-      uses: mikeal/publish-to-github-action@master
+      uses: mikeal/publish-to-github-action@main
       env:
         GITHUB_TOKEN: $${{secrets.GITHUB_TOKEN}}
