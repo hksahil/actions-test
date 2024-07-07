@@ -1,9 +1,9 @@
 name: ETL Pipeline
 
 on:
-  schedule:
-  # cron to run everyday 5 pm
-  - cron: '0 17 * * *'
+  # schedule:
+  # # cron to run everyday 5 pm
+  # - cron: '0 17 * * *'
   workflow_dispatch:
 
 jobs:
